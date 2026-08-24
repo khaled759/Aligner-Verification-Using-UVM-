@@ -1,8 +1,9 @@
 # ModelSim / QuestaSim artifacts
 work/
+.tcl-lsp/
 modelsim.ini
 transcript
 vsim.wlf
 *.wlf
 *.vscode
-./specs/aligner_datasheet_v_1_0.pdf
+specs/aligner_datasheet_v_1_0.pdf
