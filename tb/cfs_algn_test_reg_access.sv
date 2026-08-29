@@ -13,6 +13,15 @@
         phase.raise_objection(this, "TEST_DONE");
         
         #(100ns);
+
+        for(int i = 0; i < 10; i++) begin
+            cfs_apb_item_drv item = cfs_apb_item_drv::type_id::create("item");
+
+            if (item.randomize()) begin
+                `uvm_info("DEBUG", $sformatf("[%0d] item: %0s", i, item.convert2string()), UVM_LOW)
+            end
+            else `uvm_fatal("RAND FAILED", "Transaction randomized failed")
+        end
       
         `uvm_info("DEBUG", "this is the end of the test", UVM_LOW)
       
