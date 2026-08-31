@@ -12,7 +12,10 @@
         `include "cfs_apb_item_base.sv"
         `include "cfs_apb_item_drv.sv"
         `include "cfs_apb_agent_config.sv"
+        `include "cfs_apb_sequencer.sv"
+        `include "cfs_apb_driver.sv"
         `include "cfs_apb_agent.sv"
+        
     endpackage
 
 `endif
