@@ -14,7 +14,7 @@ vlog -sv -work work +incdir+$PROJ_HOME/tb $PROJ_HOME/tb/testbench.sv
 vsim -voptargs="+acc" work.testbench +UVM_TESTNAME=cfs_algn_test_reg_access
 
 # Add Waveforms
-add wave -position insertpoint sim:/testbench/dut/*
+do cfs_apb_wave.tcl
 
 # Run the Simulation
 run -all
