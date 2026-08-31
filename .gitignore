@@ -8,3 +8,4 @@ dump.vcd
 *.wlf
 *.vscode
 specs/aligner_datasheet_v_1_0.pdf
+vsim_stacktrace.vstf
