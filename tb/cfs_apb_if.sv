@@ -6,7 +6,7 @@
   `endif
 
   `ifndef CFS_APB_MAX_ADDR_WIDTH
-  	`define CFS_APB_MAX_ADDR_WIDTH 32
+  	`define CFS_APB_MAX_ADDR_WIDTH 16
   `endif
 
   interface cfs_apb_if(input pclk);
