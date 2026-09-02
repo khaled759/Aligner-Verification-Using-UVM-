@@ -49,6 +49,14 @@
             while (!vif.pready) begin
                 @(posedge vif.pclk);
                 item.length++;
+                
+                // check of the apb is stuck at a transfer
+                if (agent_config.get_has_checks()) begin
+                    if (item.length >= agent_config.get_stuck_threshold()) begin
+                        `uvm_error("PROTOCOL_ERROR", $sformatf("The APB transfer reached the stuck threshold value of %0d",
+                         item.length))
+                    end
+                end
             end
 
             item.response = cfs_apb_response'(vif.pslverr);
