@@ -133,6 +133,8 @@
             port_item = new("port_item", this);
             cover_item = new;
             cover_item.set_inst_name($sformatf("%s_cover_item", get_full_name()));   
+            cover_reset = new;
+            cover_reset.set_inst_name($sformatf("%s_cover_reset", get_full_name()));  
         endfunction
 
         virtual function void build_phase(uvm_phase phase);
