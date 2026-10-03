@@ -18,6 +18,12 @@
             super.build_phase(phase);
             env = cfs_algn_env::type_id::create("env", this);
         endfunction
+
+        virtual function void start_of_simulation_phase(uvm_phase phase);
+            super.start_of_simulation_phase(phase);
+            this.print();
+            factory.print();
+        endfunction
     endclass 
 
 `endif 

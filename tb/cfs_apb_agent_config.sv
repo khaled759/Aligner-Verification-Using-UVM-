@@ -9,8 +9,11 @@
         local uvm_active_passive_enum active_passive;
 
         // to enable the protocol checks
-        bit has_checks; 
+        local bit has_checks; 
         
+        // to enable the protocol coverage 
+        local bit has_coverage;
+
         //Number of clock cycles after which an APB transfer is considered
         //stuck and an error is triggered
         local int unsigned stuck_threshold;
@@ -22,6 +25,7 @@
             super.new(name, parent);
             active_passive = UVM_ACTIVE;
             has_checks = 1;
+            has_coverage = 1;
             stuck_threshold = 1000;
         endfunction 
 
@@ -64,6 +68,13 @@
             return has_checks;
         endfunction
 
+        virtual function void set_has_coverage(bit value);
+            has_coverage = value;
+        endfunction
+
+        virtual function bit get_has_coverage();
+            return has_coverage;
+        endfunction
         
         virtual function int unsigned get_stuck_threshold();
             return stuck_threshold;

@@ -8,7 +8,7 @@
         cfs_apb_sequencer sequencer;
         cfs_apb_driver driver;
         cfs_apb_monitor monitor;
-
+        cfs_apb_coverage coverage;
         `uvm_component_utils(cfs_apb_agent)
 
         function new(string name = "", uvm_component parent);
@@ -26,6 +26,11 @@
             if (agent_config.get_active_passive() == UVM_ACTIVE) begin
                 sequencer = cfs_apb_sequencer::type_id::create("sequencer", this);
                 driver = cfs_apb_driver::type_id::create("driver", this);
+            end
+
+            // build coverage component if has_coverage is setted
+            if (agent_config.get_has_coverage()) begin
+                coverage = cfs_apb_coverage::type_id::create("coverage", this);
             end
         endfunction
 
@@ -46,6 +51,11 @@
             end
 
             monitor.agent_config = agent_config;
+
+            if (agent_config.get_has_coverage()) begin
+                coverage.agent_config = agent_config;
+                monitor.output_port.connect(coverage.port_item);
+            end
 
             // connecting the driver and the sequencer ports
             if (agent_config.get_active_passive() == UVM_ACTIVE) begin

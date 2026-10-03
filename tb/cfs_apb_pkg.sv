@@ -18,6 +18,7 @@
         `include "cfs_apb_sequence_simple.sv"
         `include "cfs_apb_sequence_rw.sv"
         `include "cfs_apb_sequence_random.sv"
+        `include "cfs_apb_coverage.sv"
         `include "cfs_apb_driver.sv"
         `include "cfs_apb_monitor.sv"
         `include "cfs_apb_agent.sv"

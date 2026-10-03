@@ -1,0 +1,926 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /testbench/apb_if
+=== Design Unit: work.cfs_apb_if
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      15        12         3    80.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/testbench/apb_if/PENABLE_AT_SETUP_PHASE_A
+                     tb/cfs_apb_if.sv(55)               0          1
+/testbench/apb_if/PENABLE_ENTRING_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(63)               0          1
+/testbench/apb_if/PENABLE_EXITING_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(72)               0          0
+/testbench/apb_if/PENABLE_STABLE_AT_ACCESS_PHASE_P
+                     tb/cfs_apb_if.sv(82)               0          1
+/testbench/apb_if/PWRITE_STABLE_AT_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(91)               0          1
+/testbench/apb_if/PADDR_STABLE_AT_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(99)               0          1
+/testbench/apb_if/PWDATA_STABLE_AT_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(107)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PSEL_A
+                     tb/cfs_apb_if.sv(119)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PENABLE_A
+                     tb/cfs_apb_if.sv(127)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PWRITE_A
+                     tb/cfs_apb_if.sv(135)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PADDR_A
+                     tb/cfs_apb_if.sv(143)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PWDATA_A
+                     tb/cfs_apb_if.sv(151)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PRDATA_A
+                     tb/cfs_apb_if.sv(159)              0          0
+/testbench/apb_if/UNKNOWN_VALUE_PREADY_A
+                     tb/cfs_apb_if.sv(167)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PSLVERR_A
+                     tb/cfs_apb_if.sv(175)              0          0
+
+=================================================================================
+=== Instance: /testbench/dut/core/rx_fifo
+=== Design Unit: work.cfs_synch_fifo
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/testbench/dut/core/rx_fifo/#ublk#72574239#54/immed__59
+                     src/cfs_synch_fifo.v(59)           0          1
+/testbench/dut/core/rx_fifo/#ublk#72574239#54/immed__55
+                     src/cfs_synch_fifo.v(55)           0          1
+
+=================================================================================
+=== Instance: /testbench/dut/core/tx_fifo
+=== Design Unit: work.cfs_synch_fifo
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/testbench/dut/core/tx_fifo/#ublk#72574239#54/immed__59
+                     src/cfs_synch_fifo.v(59)           0          1
+/testbench/dut/core/tx_fifo/#ublk#72574239#54/immed__55
+                     src/cfs_synch_fifo.v(55)           0          1
+
+=================================================================================
+=== Instance: /testbench/dut/core
+=== Design Unit: work.cfs_aligner_core
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/testbench/dut/core/#ublk#167905109#187/immed__196
+                     src/cfs_aligner_core.v(196)
+                                                        0          1
+/testbench/dut/core/#ublk#167905109#187/immed__192
+                     src/cfs_aligner_core.v(192)
+                                                        0          1
+/testbench/dut/core/#ublk#167905109#187/immed__188
+                     src/cfs_aligner_core.v(188)
+                                                        0          1
+
+=================================================================================
+=== Instance: /cfs_apb_pkg
+=== Design Unit: work.cfs_apb_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      3        na        na    93.96%
+        Coverpoints/Crosses          8        na        na        na
+            Covergroup Bins         77        67        10    87.01%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /cfs_apb_pkg/cfs_apb_cover_index_wrapper/cfs_apb_cover_index_wrapper__1/cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    16         16          -                      
+    missing/total bins:                                     0         16          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       7          1          -    Covered              
+        bin values[1]                                       7          1          -    Covered              
+        bin values[2]                                       7          1          -    Covered              
+        bin values[3]                                       7          1          -    Covered              
+        bin values[4]                                       7          1          -    Covered              
+        bin values[5]                                       7          1          -    Covered              
+        bin values[6]                                       7          1          -    Covered              
+        bin values[7]                                       7          1          -    Covered              
+        bin values[8]                                       7          1          -    Covered              
+        bin values[9]                                       7          1          -    Covered              
+        bin values[10]                                      7          1          -    Covered              
+        bin values[11]                                      7          1          -    Covered              
+        bin values[12]                                      7          1          -    Covered              
+        bin values[13]                                      7          1          -    Covered              
+        bin values[14]                                      7          1          -    Covered              
+        bin values[15]                                      7          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_addr_0_cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    16         16          -                      
+    missing/total bins:                                     0         16          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       5          1          -    Covered              
+        bin values[1]                                       5          1          -    Covered              
+        bin values[2]                                       4          1          -    Covered              
+        bin values[3]                                       5          1          -    Covered              
+        bin values[4]                                       5          1          -    Covered              
+        bin values[5]                                       5          1          -    Covered              
+        bin values[6]                                       7          1          -    Covered              
+        bin values[7]                                       5          1          -    Covered              
+        bin values[8]                                       6          1          -    Covered              
+        bin values[9]                                       7          1          -    Covered              
+        bin values[10]                                      6          1          -    Covered              
+        bin values[11]                                      6          1          -    Covered              
+        bin values[12]                                      6          1          -    Covered              
+        bin values[13]                                      6          1          -    Covered              
+        bin values[14]                                      7          1          -    Covered              
+        bin values[15]                                      5          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_addr_1_cover_index 
+                                                       81.25%        100          -    Uncovered            
+    covered/total bins:                                    13         16          -                      
+    missing/total bins:                                     3         16          -                      
+    % Hit:                                             81.25%        100          -                      
+    Coverpoint index                                   81.25%        100          -    Uncovered            
+        covered/total bins:                                13         16          -                      
+        missing/total bins:                                 3         16          -                      
+        % Hit:                                         81.25%        100          -                      
+        bin values[0]                                       2          1          -    Covered              
+        bin values[1]                                       2          1          -    Covered              
+        bin values[2]                                       3          1          -    Covered              
+        bin values[3]                                       2          1          -    Covered              
+        bin values[4]                                       2          1          -    Covered              
+        bin values[5]                                       2          1          -    Covered              
+        bin values[6]                                       0          1          -    ZERO                 
+        bin values[7]                                       2          1          -    Covered              
+        bin values[8]                                       1          1          -    Covered              
+        bin values[9]                                       0          1          -    ZERO                 
+        bin values[10]                                      1          1          -    Covered              
+        bin values[11]                                      1          1          -    Covered              
+        bin values[12]                                      1          1          -    Covered              
+        bin values[13]                                      1          1          -    Covered              
+        bin values[14]                                      0          1          -    ZERO                 
+        bin values[15]                                      2          1          -    Covered              
+ TYPE /cfs_apb_pkg/cfs_apb_cover_index_wrapper/cfs_apb_cover_index_wrapper__2/cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       7          1          -    Covered              
+        bin values[1]                                       7          1          -    Covered              
+        bin values[2]                                       7          1          -    Covered              
+        bin values[3]                                       7          1          -    Covered              
+        bin values[4]                                       7          1          -    Covered              
+        bin values[5]                                       7          1          -    Covered              
+        bin values[6]                                       7          1          -    Covered              
+        bin values[7]                                       7          1          -    Covered              
+        bin values[8]                                       7          1          -    Covered              
+        bin values[9]                                       7          1          -    Covered              
+        bin values[10]                                      7          1          -    Covered              
+        bin values[11]                                      7          1          -    Covered              
+        bin values[12]                                      7          1          -    Covered              
+        bin values[13]                                      7          1          -    Covered              
+        bin values[14]                                      7          1          -    Covered              
+        bin values[15]                                      7          1          -    Covered              
+        bin values[16]                                      7          1          -    Covered              
+        bin values[17]                                      7          1          -    Covered              
+        bin values[18]                                      7          1          -    Covered              
+        bin values[19]                                      7          1          -    Covered              
+        bin values[20]                                      7          1          -    Covered              
+        bin values[21]                                      7          1          -    Covered              
+        bin values[22]                                      7          1          -    Covered              
+        bin values[23]                                      7          1          -    Covered              
+        bin values[24]                                      7          1          -    Covered              
+        bin values[25]                                      7          1          -    Covered              
+        bin values[26]                                      7          1          -    Covered              
+        bin values[27]                                      7          1          -    Covered              
+        bin values[28]                                      7          1          -    Covered              
+        bin values[29]                                      7          1          -    Covered              
+        bin values[30]                                      7          1          -    Covered              
+        bin values[31]                                      7          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_wr_data_0_cover_index 
+                                                       93.75%        100          -    Uncovered            
+    covered/total bins:                                    30         32          -                      
+    missing/total bins:                                     2         32          -                      
+    % Hit:                                             93.75%        100          -                      
+    Coverpoint index                                   93.75%        100          -    Uncovered            
+        covered/total bins:                                30         32          -                      
+        missing/total bins:                                 2         32          -                      
+        % Hit:                                         93.75%        100          -                      
+        bin values[0]                                       0          1          -    ZERO                 
+        bin values[1]                                       2          1          -    Covered              
+        bin values[2]                                       3          1          -    Covered              
+        bin values[3]                                       3          1          -    Covered              
+        bin values[4]                                       0          1          -    ZERO                 
+        bin values[5]                                       3          1          -    Covered              
+        bin values[6]                                       2          1          -    Covered              
+        bin values[7]                                       3          1          -    Covered              
+        bin values[8]                                       1          1          -    Covered              
+        bin values[9]                                       1          1          -    Covered              
+        bin values[10]                                      2          1          -    Covered              
+        bin values[11]                                      3          1          -    Covered              
+        bin values[12]                                      2          1          -    Covered              
+        bin values[13]                                      2          1          -    Covered              
+        bin values[14]                                      3          1          -    Covered              
+        bin values[15]                                      2          1          -    Covered              
+        bin values[16]                                      2          1          -    Covered              
+        bin values[17]                                      1          1          -    Covered              
+        bin values[18]                                      1          1          -    Covered              
+        bin values[19]                                      2          1          -    Covered              
+        bin values[20]                                      1          1          -    Covered              
+        bin values[21]                                      2          1          -    Covered              
+        bin values[22]                                      2          1          -    Covered              
+        bin values[23]                                      3          1          -    Covered              
+        bin values[24]                                      2          1          -    Covered              
+        bin values[25]                                      2          1          -    Covered              
+        bin values[26]                                      3          1          -    Covered              
+        bin values[27]                                      4          1          -    Covered              
+        bin values[28]                                      3          1          -    Covered              
+        bin values[29]                                      4          1          -    Covered              
+        bin values[30]                                      3          1          -    Covered              
+        bin values[31]                                      3          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_wr_data_1_cover_index 
+                                                       93.75%        100          -    Uncovered            
+    covered/total bins:                                    30         32          -                      
+    missing/total bins:                                     2         32          -                      
+    % Hit:                                             93.75%        100          -                      
+    Coverpoint index                                   93.75%        100          -    Uncovered            
+        covered/total bins:                                30         32          -                      
+        missing/total bins:                                 2         32          -                      
+        % Hit:                                         93.75%        100          -                      
+        bin values[0]                                       4          1          -    Covered              
+        bin values[1]                                       2          1          -    Covered              
+        bin values[2]                                       1          1          -    Covered              
+        bin values[3]                                       1          1          -    Covered              
+        bin values[4]                                       4          1          -    Covered              
+        bin values[5]                                       1          1          -    Covered              
+        bin values[6]                                       2          1          -    Covered              
+        bin values[7]                                       1          1          -    Covered              
+        bin values[8]                                       3          1          -    Covered              
+        bin values[9]                                       3          1          -    Covered              
+        bin values[10]                                      2          1          -    Covered              
+        bin values[11]                                      1          1          -    Covered              
+        bin values[12]                                      2          1          -    Covered              
+        bin values[13]                                      2          1          -    Covered              
+        bin values[14]                                      1          1          -    Covered              
+        bin values[15]                                      2          1          -    Covered              
+        bin values[16]                                      2          1          -    Covered              
+        bin values[17]                                      3          1          -    Covered              
+        bin values[18]                                      3          1          -    Covered              
+        bin values[19]                                      2          1          -    Covered              
+        bin values[20]                                      3          1          -    Covered              
+        bin values[21]                                      2          1          -    Covered              
+        bin values[22]                                      2          1          -    Covered              
+        bin values[23]                                      1          1          -    Covered              
+        bin values[24]                                      2          1          -    Covered              
+        bin values[25]                                      2          1          -    Covered              
+        bin values[26]                                      1          1          -    Covered              
+        bin values[27]                                      0          1          -    ZERO                 
+        bin values[28]                                      1          1          -    Covered              
+        bin values[29]                                      0          1          -    ZERO                 
+        bin values[30]                                      1          1          -    Covered              
+        bin values[31]                                      1          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_rd_data_0_cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       3          1          -    Covered              
+        bin values[1]                                       3          1          -    Covered              
+        bin values[2]                                       3          1          -    Covered              
+        bin values[3]                                       3          1          -    Covered              
+        bin values[4]                                       3          1          -    Covered              
+        bin values[5]                                       3          1          -    Covered              
+        bin values[6]                                       3          1          -    Covered              
+        bin values[7]                                       3          1          -    Covered              
+        bin values[8]                                       3          1          -    Covered              
+        bin values[9]                                       3          1          -    Covered              
+        bin values[10]                                      3          1          -    Covered              
+        bin values[11]                                      3          1          -    Covered              
+        bin values[12]                                      3          1          -    Covered              
+        bin values[13]                                      3          1          -    Covered              
+        bin values[14]                                      3          1          -    Covered              
+        bin values[15]                                      3          1          -    Covered              
+        bin values[16]                                      3          1          -    Covered              
+        bin values[17]                                      3          1          -    Covered              
+        bin values[18]                                      3          1          -    Covered              
+        bin values[19]                                      3          1          -    Covered              
+        bin values[20]                                      3          1          -    Covered              
+        bin values[21]                                      3          1          -    Covered              
+        bin values[22]                                      3          1          -    Covered              
+        bin values[23]                                      3          1          -    Covered              
+        bin values[24]                                      3          1          -    Covered              
+        bin values[25]                                      3          1          -    Covered              
+        bin values[26]                                      3          1          -    Covered              
+        bin values[27]                                      3          1          -    Covered              
+        bin values[28]                                      3          1          -    Covered              
+        bin values[29]                                      3          1          -    Covered              
+        bin values[30]                                      3          1          -    Covered              
+        bin values[31]                                      3          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_rd_data_1_cover_index 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0         32          -                      
+    missing/total bins:                                    32         32          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint index                                    0.00%        100          -    ZERO                 
+        covered/total bins:                                 0         32          -                      
+        missing/total bins:                                32         32          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin values[0]                                       0          1          -    ZERO                 
+        bin values[1]                                       0          1          -    ZERO                 
+        bin values[2]                                       0          1          -    ZERO                 
+        bin values[3]                                       0          1          -    ZERO                 
+        bin values[4]                                       0          1          -    ZERO                 
+        bin values[5]                                       0          1          -    ZERO                 
+        bin values[6]                                       0          1          -    ZERO                 
+        bin values[7]                                       0          1          -    ZERO                 
+        bin values[8]                                       0          1          -    ZERO                 
+        bin values[9]                                       0          1          -    ZERO                 
+        bin values[10]                                      0          1          -    ZERO                 
+        bin values[11]                                      0          1          -    ZERO                 
+        bin values[12]                                      0          1          -    ZERO                 
+        bin values[13]                                      0          1          -    ZERO                 
+        bin values[14]                                      0          1          -    ZERO                 
+        bin values[15]                                      0          1          -    ZERO                 
+        bin values[16]                                      0          1          -    ZERO                 
+        bin values[17]                                      0          1          -    ZERO                 
+        bin values[18]                                      0          1          -    ZERO                 
+        bin values[19]                                      0          1          -    ZERO                 
+        bin values[20]                                      0          1          -    ZERO                 
+        bin values[21]                                      0          1          -    ZERO                 
+        bin values[22]                                      0          1          -    ZERO                 
+        bin values[23]                                      0          1          -    ZERO                 
+        bin values[24]                                      0          1          -    ZERO                 
+        bin values[25]                                      0          1          -    ZERO                 
+        bin values[26]                                      0          1          -    ZERO                 
+        bin values[27]                                      0          1          -    ZERO                 
+        bin values[28]                                      0          1          -    ZERO                 
+        bin values[29]                                      0          1          -    ZERO                 
+        bin values[30]                                      0          1          -    ZERO                 
+        bin values[31]                                      0          1          -    ZERO                 
+ TYPE /cfs_apb_pkg/cfs_apb_coverage/cover_item         81.90%        100          -    Uncovered            
+    covered/total bins:                                    19         29          -                      
+    missing/total bins:                                    10         29          -                      
+    % Hit:                                             65.51%        100          -                      
+    Coverpoint direction                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint trans_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint response                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint length                                  20.00%        100          -    Uncovered            
+        covered/total bins:                                 2         10          -                      
+        missing/total bins:                                 8         10          -                      
+        % Hit:                                         20.00%        100          -                      
+    Coverpoint prev_item_delay                         71.42%        100          -    Uncovered            
+        covered/total bins:                                 5          7          -                      
+        missing/total bins:                                 2          7          -                      
+        % Hit:                                         71.42%        100          -                      
+    Cross response_x_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance uvm_test_top.env.apb_agent.coverage_cover_item 
+                                                       81.90%        100          -    Uncovered            
+    covered/total bins:                                    19         29          -                      
+    missing/total bins:                                    10         29          -                      
+    % Hit:                                             65.51%        100          -                      
+    Coverpoint direction                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[CFS_APB_READ]                              3          1          -    Covered              
+        bin auto[CFS_APB_WRITE]                             4          1          -    Covered              
+    Coverpoint trans_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin direction_trans[CFS_APB_WRITE=>CFS_APB_WRITE] 
+                                                            2          1          -    Covered              
+        bin direction_trans[CFS_APB_WRITE=>CFS_APB_READ] 
+                                                            1          1          -    Covered              
+        bin direction_trans[CFS_APB_READ=>CFS_APB_WRITE] 
+                                                            2          1          -    Covered              
+        bin direction_trans[CFS_APB_READ=>CFS_APB_READ] 
+                                                            1          1          -    Covered              
+    Coverpoint response                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[CFS_APB_OKAY]                              3          1          -    Covered              
+        bin auto[CFS_APB_ERR]                               4          1          -    Covered              
+    Coverpoint length                                  20.00%        100          -    Uncovered            
+        covered/total bins:                                 2         10          -                      
+        missing/total bins:                                 8         10          -                      
+        % Hit:                                         20.00%        100          -                      
+        illegal_bin length_lt_2                             0                     -    ZERO                 
+        bin length_eq_2                                     1          1          -    Covered              
+        bin length_le_10[3]                                 6          1          -    Covered              
+        bin length_le_10[4]                                 0          1          -    ZERO                 
+        bin length_le_10[5]                                 0          1          -    ZERO                 
+        bin length_le_10[6]                                 0          1          -    ZERO                 
+        bin length_le_10[7]                                 0          1          -    ZERO                 
+        bin length_le_10[8]                                 0          1          -    ZERO                 
+        bin length_le_10[9]                                 0          1          -    ZERO                 
+        bin length_le_10[10]                                0          1          -    ZERO                 
+        bin length_gt_10                                    0          1          -    ZERO                 
+    Coverpoint prev_item_delay                         71.42%        100          -    Uncovered            
+        covered/total bins:                                 5          7          -                      
+        missing/total bins:                                 2          7          -                      
+        % Hit:                                         71.42%        100          -                      
+        bin back2back                                       1          1          -    Covered              
+        bin delay_le_5[1]                                   0          1          -    ZERO                 
+        bin delay_le_5[2]                                   0          1          -    ZERO                 
+        bin delay_le_5[3]                                   1          1          -    Covered              
+        bin delay_le_5[4]                                   1          1          -    Covered              
+        bin delay_le_5[5]                                   2          1          -    Covered              
+        bin delay_gt_5                                      2          1          -    Covered              
+    Cross response_x_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[CFS_APB_ERR],auto[CFS_APB_WRITE]> 
+                                                            3          1          -    Covered              
+            bin <auto[CFS_APB_OKAY],auto[CFS_APB_WRITE]> 
+                                                            1          1          -    Covered              
+            bin <auto[CFS_APB_ERR],auto[CFS_APB_READ]> 
+                                                            1          1          -    Covered              
+            bin <auto[CFS_APB_OKAY],auto[CFS_APB_READ]> 
+                                                            2          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /cfs_apb_pkg/cfs_apb_cover_index_wrapper/cfs_apb_cover_index_wrapper__1/cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    16         16          -                      
+    missing/total bins:                                     0         16          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       7          1          -    Covered              
+        bin values[1]                                       7          1          -    Covered              
+        bin values[2]                                       7          1          -    Covered              
+        bin values[3]                                       7          1          -    Covered              
+        bin values[4]                                       7          1          -    Covered              
+        bin values[5]                                       7          1          -    Covered              
+        bin values[6]                                       7          1          -    Covered              
+        bin values[7]                                       7          1          -    Covered              
+        bin values[8]                                       7          1          -    Covered              
+        bin values[9]                                       7          1          -    Covered              
+        bin values[10]                                      7          1          -    Covered              
+        bin values[11]                                      7          1          -    Covered              
+        bin values[12]                                      7          1          -    Covered              
+        bin values[13]                                      7          1          -    Covered              
+        bin values[14]                                      7          1          -    Covered              
+        bin values[15]                                      7          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_addr_0_cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    16         16          -                      
+    missing/total bins:                                     0         16          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       5          1          -    Covered              
+        bin values[1]                                       5          1          -    Covered              
+        bin values[2]                                       4          1          -    Covered              
+        bin values[3]                                       5          1          -    Covered              
+        bin values[4]                                       5          1          -    Covered              
+        bin values[5]                                       5          1          -    Covered              
+        bin values[6]                                       7          1          -    Covered              
+        bin values[7]                                       5          1          -    Covered              
+        bin values[8]                                       6          1          -    Covered              
+        bin values[9]                                       7          1          -    Covered              
+        bin values[10]                                      6          1          -    Covered              
+        bin values[11]                                      6          1          -    Covered              
+        bin values[12]                                      6          1          -    Covered              
+        bin values[13]                                      6          1          -    Covered              
+        bin values[14]                                      7          1          -    Covered              
+        bin values[15]                                      5          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_addr_1_cover_index 
+                                                       81.25%        100          -    Uncovered            
+    covered/total bins:                                    13         16          -                      
+    missing/total bins:                                     3         16          -                      
+    % Hit:                                             81.25%        100          -                      
+    Coverpoint index                                   81.25%        100          -    Uncovered            
+        covered/total bins:                                13         16          -                      
+        missing/total bins:                                 3         16          -                      
+        % Hit:                                         81.25%        100          -                      
+        bin values[0]                                       2          1          -    Covered              
+        bin values[1]                                       2          1          -    Covered              
+        bin values[2]                                       3          1          -    Covered              
+        bin values[3]                                       2          1          -    Covered              
+        bin values[4]                                       2          1          -    Covered              
+        bin values[5]                                       2          1          -    Covered              
+        bin values[6]                                       0          1          -    ZERO                 
+        bin values[7]                                       2          1          -    Covered              
+        bin values[8]                                       1          1          -    Covered              
+        bin values[9]                                       0          1          -    ZERO                 
+        bin values[10]                                      1          1          -    Covered              
+        bin values[11]                                      1          1          -    Covered              
+        bin values[12]                                      1          1          -    Covered              
+        bin values[13]                                      1          1          -    Covered              
+        bin values[14]                                      0          1          -    ZERO                 
+        bin values[15]                                      2          1          -    Covered              
+ TYPE /cfs_apb_pkg/cfs_apb_cover_index_wrapper/cfs_apb_cover_index_wrapper__2/cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       7          1          -    Covered              
+        bin values[1]                                       7          1          -    Covered              
+        bin values[2]                                       7          1          -    Covered              
+        bin values[3]                                       7          1          -    Covered              
+        bin values[4]                                       7          1          -    Covered              
+        bin values[5]                                       7          1          -    Covered              
+        bin values[6]                                       7          1          -    Covered              
+        bin values[7]                                       7          1          -    Covered              
+        bin values[8]                                       7          1          -    Covered              
+        bin values[9]                                       7          1          -    Covered              
+        bin values[10]                                      7          1          -    Covered              
+        bin values[11]                                      7          1          -    Covered              
+        bin values[12]                                      7          1          -    Covered              
+        bin values[13]                                      7          1          -    Covered              
+        bin values[14]                                      7          1          -    Covered              
+        bin values[15]                                      7          1          -    Covered              
+        bin values[16]                                      7          1          -    Covered              
+        bin values[17]                                      7          1          -    Covered              
+        bin values[18]                                      7          1          -    Covered              
+        bin values[19]                                      7          1          -    Covered              
+        bin values[20]                                      7          1          -    Covered              
+        bin values[21]                                      7          1          -    Covered              
+        bin values[22]                                      7          1          -    Covered              
+        bin values[23]                                      7          1          -    Covered              
+        bin values[24]                                      7          1          -    Covered              
+        bin values[25]                                      7          1          -    Covered              
+        bin values[26]                                      7          1          -    Covered              
+        bin values[27]                                      7          1          -    Covered              
+        bin values[28]                                      7          1          -    Covered              
+        bin values[29]                                      7          1          -    Covered              
+        bin values[30]                                      7          1          -    Covered              
+        bin values[31]                                      7          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_wr_data_0_cover_index 
+                                                       93.75%        100          -    Uncovered            
+    covered/total bins:                                    30         32          -                      
+    missing/total bins:                                     2         32          -                      
+    % Hit:                                             93.75%        100          -                      
+    Coverpoint index                                   93.75%        100          -    Uncovered            
+        covered/total bins:                                30         32          -                      
+        missing/total bins:                                 2         32          -                      
+        % Hit:                                         93.75%        100          -                      
+        bin values[0]                                       0          1          -    ZERO                 
+        bin values[1]                                       2          1          -    Covered              
+        bin values[2]                                       3          1          -    Covered              
+        bin values[3]                                       3          1          -    Covered              
+        bin values[4]                                       0          1          -    ZERO                 
+        bin values[5]                                       3          1          -    Covered              
+        bin values[6]                                       2          1          -    Covered              
+        bin values[7]                                       3          1          -    Covered              
+        bin values[8]                                       1          1          -    Covered              
+        bin values[9]                                       1          1          -    Covered              
+        bin values[10]                                      2          1          -    Covered              
+        bin values[11]                                      3          1          -    Covered              
+        bin values[12]                                      2          1          -    Covered              
+        bin values[13]                                      2          1          -    Covered              
+        bin values[14]                                      3          1          -    Covered              
+        bin values[15]                                      2          1          -    Covered              
+        bin values[16]                                      2          1          -    Covered              
+        bin values[17]                                      1          1          -    Covered              
+        bin values[18]                                      1          1          -    Covered              
+        bin values[19]                                      2          1          -    Covered              
+        bin values[20]                                      1          1          -    Covered              
+        bin values[21]                                      2          1          -    Covered              
+        bin values[22]                                      2          1          -    Covered              
+        bin values[23]                                      3          1          -    Covered              
+        bin values[24]                                      2          1          -    Covered              
+        bin values[25]                                      2          1          -    Covered              
+        bin values[26]                                      3          1          -    Covered              
+        bin values[27]                                      4          1          -    Covered              
+        bin values[28]                                      3          1          -    Covered              
+        bin values[29]                                      4          1          -    Covered              
+        bin values[30]                                      3          1          -    Covered              
+        bin values[31]                                      3          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_wr_data_1_cover_index 
+                                                       93.75%        100          -    Uncovered            
+    covered/total bins:                                    30         32          -                      
+    missing/total bins:                                     2         32          -                      
+    % Hit:                                             93.75%        100          -                      
+    Coverpoint index                                   93.75%        100          -    Uncovered            
+        covered/total bins:                                30         32          -                      
+        missing/total bins:                                 2         32          -                      
+        % Hit:                                         93.75%        100          -                      
+        bin values[0]                                       4          1          -    Covered              
+        bin values[1]                                       2          1          -    Covered              
+        bin values[2]                                       1          1          -    Covered              
+        bin values[3]                                       1          1          -    Covered              
+        bin values[4]                                       4          1          -    Covered              
+        bin values[5]                                       1          1          -    Covered              
+        bin values[6]                                       2          1          -    Covered              
+        bin values[7]                                       1          1          -    Covered              
+        bin values[8]                                       3          1          -    Covered              
+        bin values[9]                                       3          1          -    Covered              
+        bin values[10]                                      2          1          -    Covered              
+        bin values[11]                                      1          1          -    Covered              
+        bin values[12]                                      2          1          -    Covered              
+        bin values[13]                                      2          1          -    Covered              
+        bin values[14]                                      1          1          -    Covered              
+        bin values[15]                                      2          1          -    Covered              
+        bin values[16]                                      2          1          -    Covered              
+        bin values[17]                                      3          1          -    Covered              
+        bin values[18]                                      3          1          -    Covered              
+        bin values[19]                                      2          1          -    Covered              
+        bin values[20]                                      3          1          -    Covered              
+        bin values[21]                                      2          1          -    Covered              
+        bin values[22]                                      2          1          -    Covered              
+        bin values[23]                                      1          1          -    Covered              
+        bin values[24]                                      2          1          -    Covered              
+        bin values[25]                                      2          1          -    Covered              
+        bin values[26]                                      1          1          -    Covered              
+        bin values[27]                                      0          1          -    ZERO                 
+        bin values[28]                                      1          1          -    Covered              
+        bin values[29]                                      0          1          -    ZERO                 
+        bin values[30]                                      1          1          -    Covered              
+        bin values[31]                                      1          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_rd_data_0_cover_index 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint index                                  100.00%        100          -    Covered              
+        covered/total bins:                                32         32          -                      
+        missing/total bins:                                 0         32          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin values[0]                                       3          1          -    Covered              
+        bin values[1]                                       3          1          -    Covered              
+        bin values[2]                                       3          1          -    Covered              
+        bin values[3]                                       3          1          -    Covered              
+        bin values[4]                                       3          1          -    Covered              
+        bin values[5]                                       3          1          -    Covered              
+        bin values[6]                                       3          1          -    Covered              
+        bin values[7]                                       3          1          -    Covered              
+        bin values[8]                                       3          1          -    Covered              
+        bin values[9]                                       3          1          -    Covered              
+        bin values[10]                                      3          1          -    Covered              
+        bin values[11]                                      3          1          -    Covered              
+        bin values[12]                                      3          1          -    Covered              
+        bin values[13]                                      3          1          -    Covered              
+        bin values[14]                                      3          1          -    Covered              
+        bin values[15]                                      3          1          -    Covered              
+        bin values[16]                                      3          1          -    Covered              
+        bin values[17]                                      3          1          -    Covered              
+        bin values[18]                                      3          1          -    Covered              
+        bin values[19]                                      3          1          -    Covered              
+        bin values[20]                                      3          1          -    Covered              
+        bin values[21]                                      3          1          -    Covered              
+        bin values[22]                                      3          1          -    Covered              
+        bin values[23]                                      3          1          -    Covered              
+        bin values[24]                                      3          1          -    Covered              
+        bin values[25]                                      3          1          -    Covered              
+        bin values[26]                                      3          1          -    Covered              
+        bin values[27]                                      3          1          -    Covered              
+        bin values[28]                                      3          1          -    Covered              
+        bin values[29]                                      3          1          -    Covered              
+        bin values[30]                                      3          1          -    Covered              
+        bin values[31]                                      3          1          -    Covered              
+ Covergroup instance uvm_test_top.env.apb_agent.coverage.wrap_cover_rd_data_1_cover_index 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0         32          -                      
+    missing/total bins:                                    32         32          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint index                                    0.00%        100          -    ZERO                 
+        covered/total bins:                                 0         32          -                      
+        missing/total bins:                                32         32          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin values[0]                                       0          1          -    ZERO                 
+        bin values[1]                                       0          1          -    ZERO                 
+        bin values[2]                                       0          1          -    ZERO                 
+        bin values[3]                                       0          1          -    ZERO                 
+        bin values[4]                                       0          1          -    ZERO                 
+        bin values[5]                                       0          1          -    ZERO                 
+        bin values[6]                                       0          1          -    ZERO                 
+        bin values[7]                                       0          1          -    ZERO                 
+        bin values[8]                                       0          1          -    ZERO                 
+        bin values[9]                                       0          1          -    ZERO                 
+        bin values[10]                                      0          1          -    ZERO                 
+        bin values[11]                                      0          1          -    ZERO                 
+        bin values[12]                                      0          1          -    ZERO                 
+        bin values[13]                                      0          1          -    ZERO                 
+        bin values[14]                                      0          1          -    ZERO                 
+        bin values[15]                                      0          1          -    ZERO                 
+        bin values[16]                                      0          1          -    ZERO                 
+        bin values[17]                                      0          1          -    ZERO                 
+        bin values[18]                                      0          1          -    ZERO                 
+        bin values[19]                                      0          1          -    ZERO                 
+        bin values[20]                                      0          1          -    ZERO                 
+        bin values[21]                                      0          1          -    ZERO                 
+        bin values[22]                                      0          1          -    ZERO                 
+        bin values[23]                                      0          1          -    ZERO                 
+        bin values[24]                                      0          1          -    ZERO                 
+        bin values[25]                                      0          1          -    ZERO                 
+        bin values[26]                                      0          1          -    ZERO                 
+        bin values[27]                                      0          1          -    ZERO                 
+        bin values[28]                                      0          1          -    ZERO                 
+        bin values[29]                                      0          1          -    ZERO                 
+        bin values[30]                                      0          1          -    ZERO                 
+        bin values[31]                                      0          1          -    ZERO                 
+ TYPE /cfs_apb_pkg/cfs_apb_coverage/cover_item         81.90%        100          -    Uncovered            
+    covered/total bins:                                    19         29          -                      
+    missing/total bins:                                    10         29          -                      
+    % Hit:                                             65.51%        100          -                      
+    Coverpoint direction                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint trans_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint response                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint length                                  20.00%        100          -    Uncovered            
+        covered/total bins:                                 2         10          -                      
+        missing/total bins:                                 8         10          -                      
+        % Hit:                                         20.00%        100          -                      
+    Coverpoint prev_item_delay                         71.42%        100          -    Uncovered            
+        covered/total bins:                                 5          7          -                      
+        missing/total bins:                                 2          7          -                      
+        % Hit:                                         71.42%        100          -                      
+    Cross response_x_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance uvm_test_top.env.apb_agent.coverage_cover_item 
+                                                       81.90%        100          -    Uncovered            
+    covered/total bins:                                    19         29          -                      
+    missing/total bins:                                    10         29          -                      
+    % Hit:                                             65.51%        100          -                      
+    Coverpoint direction                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[CFS_APB_READ]                              3          1          -    Covered              
+        bin auto[CFS_APB_WRITE]                             4          1          -    Covered              
+    Coverpoint trans_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin direction_trans[CFS_APB_WRITE=>CFS_APB_WRITE] 
+                                                            2          1          -    Covered              
+        bin direction_trans[CFS_APB_WRITE=>CFS_APB_READ] 
+                                                            1          1          -    Covered              
+        bin direction_trans[CFS_APB_READ=>CFS_APB_WRITE] 
+                                                            2          1          -    Covered              
+        bin direction_trans[CFS_APB_READ=>CFS_APB_READ] 
+                                                            1          1          -    Covered              
+    Coverpoint response                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[CFS_APB_OKAY]                              3          1          -    Covered              
+        bin auto[CFS_APB_ERR]                               4          1          -    Covered              
+    Coverpoint length                                  20.00%        100          -    Uncovered            
+        covered/total bins:                                 2         10          -                      
+        missing/total bins:                                 8         10          -                      
+        % Hit:                                         20.00%        100          -                      
+        illegal_bin length_lt_2                             0                     -    ZERO                 
+        bin length_eq_2                                     1          1          -    Covered              
+        bin length_le_10[3]                                 6          1          -    Covered              
+        bin length_le_10[4]                                 0          1          -    ZERO                 
+        bin length_le_10[5]                                 0          1          -    ZERO                 
+        bin length_le_10[6]                                 0          1          -    ZERO                 
+        bin length_le_10[7]                                 0          1          -    ZERO                 
+        bin length_le_10[8]                                 0          1          -    ZERO                 
+        bin length_le_10[9]                                 0          1          -    ZERO                 
+        bin length_le_10[10]                                0          1          -    ZERO                 
+        bin length_gt_10                                    0          1          -    ZERO                 
+    Coverpoint prev_item_delay                         71.42%        100          -    Uncovered            
+        covered/total bins:                                 5          7          -                      
+        missing/total bins:                                 2          7          -                      
+        % Hit:                                         71.42%        100          -                      
+        bin back2back                                       1          1          -    Covered              
+        bin delay_le_5[1]                                   0          1          -    ZERO                 
+        bin delay_le_5[2]                                   0          1          -    ZERO                 
+        bin delay_le_5[3]                                   1          1          -    Covered              
+        bin delay_le_5[4]                                   1          1          -    Covered              
+        bin delay_le_5[5]                                   2          1          -    Covered              
+        bin delay_gt_5                                      2          1          -    Covered              
+    Cross response_x_direction                        100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[CFS_APB_ERR],auto[CFS_APB_WRITE]> 
+                                                            3          1          -    Covered              
+            bin <auto[CFS_APB_OKAY],auto[CFS_APB_WRITE]> 
+                                                            1          1          -    Covered              
+            bin <auto[CFS_APB_ERR],auto[CFS_APB_READ]> 
+                                                            1          1          -    Covered              
+            bin <auto[CFS_APB_OKAY],auto[CFS_APB_READ]> 
+                                                            2          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 93.96%  COVERGROUP TYPES: 3
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/testbench/apb_if/PENABLE_AT_SETUP_PHASE_A
+                     tb/cfs_apb_if.sv(55)               0          1
+/testbench/apb_if/PENABLE_ENTRING_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(63)               0          1
+/testbench/apb_if/PENABLE_EXITING_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(72)               0          0
+/testbench/apb_if/PENABLE_STABLE_AT_ACCESS_PHASE_P
+                     tb/cfs_apb_if.sv(82)               0          1
+/testbench/apb_if/PWRITE_STABLE_AT_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(91)               0          1
+/testbench/apb_if/PADDR_STABLE_AT_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(99)               0          1
+/testbench/apb_if/PWDATA_STABLE_AT_ACCESS_PHASE_A
+                     tb/cfs_apb_if.sv(107)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PSEL_A
+                     tb/cfs_apb_if.sv(119)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PENABLE_A
+                     tb/cfs_apb_if.sv(127)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PWRITE_A
+                     tb/cfs_apb_if.sv(135)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PADDR_A
+                     tb/cfs_apb_if.sv(143)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PWDATA_A
+                     tb/cfs_apb_if.sv(151)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PRDATA_A
+                     tb/cfs_apb_if.sv(159)              0          0
+/testbench/apb_if/UNKNOWN_VALUE_PREADY_A
+                     tb/cfs_apb_if.sv(167)              0          1
+/testbench/apb_if/UNKNOWN_VALUE_PSLVERR_A
+                     tb/cfs_apb_if.sv(175)              0          0
+/testbench/dut/core/#ublk#167905109#187/immed__196
+                     src/cfs_aligner_core.v(196)
+                                                        0          1
+/testbench/dut/core/#ublk#167905109#187/immed__192
+                     src/cfs_aligner_core.v(192)
+                                                        0          1
+/testbench/dut/core/#ublk#167905109#187/immed__188
+                     src/cfs_aligner_core.v(188)
+                                                        0          1
+/testbench/dut/core/rx_fifo/#ublk#72574239#54/immed__59
+                     src/cfs_synch_fifo.v(59)           0          1
+/testbench/dut/core/rx_fifo/#ublk#72574239#54/immed__55
+                     src/cfs_synch_fifo.v(55)           0          1
+/testbench/dut/core/tx_fifo/#ublk#72574239#54/immed__59
+                     src/cfs_synch_fifo.v(59)           0          1
+/testbench/dut/core/tx_fifo/#ublk#72574239#54/immed__55
+                     src/cfs_synch_fifo.v(55)           0          1
+
+Total Coverage By Instance (filtered view): 90.16%
+
