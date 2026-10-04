@@ -51,7 +51,7 @@
 
 
 
-    class cfs_apb_coverage extends uvm_component;
+    class cfs_apb_coverage extends uvm_component implements cfs_apb_reset_handler;
 
         uvm_analysis_imp_item #(cfs_apb_item_mon, cfs_apb_coverage) port_item;
         // factory registration
@@ -195,6 +195,13 @@
             end
 
         endfunction;
+
+        //handle reset function to capture coverage during reset
+        virtual function void handle_reset(uvm_phase phase);
+            cfs_apb_vif vif = agent_config.get_vif();
+        
+            cover_reset.sample(vif.psel);
+        endfunction
 
 
     endclass 

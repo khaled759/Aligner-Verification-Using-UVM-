@@ -1,9 +1,11 @@
 `ifndef CFS_APB_DRIVER_SV
     `define CFS_APB_DRIVER_SV
 
-    class cfs_apb_driver extends uvm_driver#(.REQ(cfs_apb_item_drv));
+    class cfs_apb_driver extends uvm_driver#(.REQ(cfs_apb_item_drv)) implements cfs_apb_reset_handler;
         
         cfs_apb_agent_config agent_config;
+        // point to the driving process
+        protected process process_drive_transactions;
 
         `uvm_component_utils(cfs_apb_driver)
 
@@ -13,29 +15,33 @@
 
 
         virtual task run_phase(uvm_phase phase);
-            drive_transactions();
+            forever begin
+                fork
+                    begin
+                        wait_reset_end();
+                        drive_transactions();
+                        disable fork;        
+                    end
+                join
+            end
         endtask
 
         protected virtual task drive_transactions ();
-            cfs_apb_vif vif = agent_config.get_vif();
+            fork
+                begin
+                    process_drive_transactions = process::self();
+                    forever begin
+                        // the item which we will drive to the dut
+                        cfs_apb_item_drv item;
 
-            // initialize signals        
-            vif.pwrite  <= 0;
-            vif.psel    <= 0;
-            vif.penable <= 0;
-            vif.paddr   <= 0;
-            vif.pwdata  <= 0;
+                        seq_item_port.get_next_item(item);
 
-            forever begin
-                // the item which we will drive to the dut
-                cfs_apb_item_drv item;
-
-                seq_item_port.get_next_item(item);
-
-                drive_transaction(item);
-                // mark item as done
-                seq_item_port.item_done();
-            end 
+                        drive_transaction(item);
+                        // mark item as done
+                        seq_item_port.item_done();
+                    end    
+                end
+            join 
         endtask
 
 
@@ -73,6 +79,30 @@
             `uvm_info("DEBUG", $sformatf("Driving \"%0s\" : %0s", item.get_full_name(), item.convert2string()), UVM_NONE)
 
         endtask
+
+          
+        //Task for waiting the reset to be finished
+        protected virtual task wait_reset_end();
+            agent_config.wait_reset_end();
+        endtask
+
+        // once reset is here kill the current transaction and drive default values
+        virtual function void handle_reset(uvm_phase phase);
+            cfs_apb_vif vif = agent_config.get_vif();
+            
+            if(process_drive_transactions != null) begin
+                process_drive_transactions.kill();
+                
+                process_drive_transactions = null;
+            end
+            
+            //Initialize the signals
+            vif.psel    <= 0;
+            vif.penable <= 0;
+            vif.pwrite  <= 0;
+            vif.paddr   <= 0;
+            vif.pwdata  <= 0;
+        endfunction
 
     endclass 
 

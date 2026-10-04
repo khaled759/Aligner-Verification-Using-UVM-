@@ -15,7 +15,17 @@
         #(100ns);
 
         fork
-          
+          begin
+            cfs_apb_vif vif = env.apb_agent.agent_config.get_vif();
+
+            repeat(3) @(posedge vif.psel);  
+            
+            #(11ns);
+            vif.preset_n <= 0;
+            repeat(4) @(posedge vif.pclk);  
+            vif.preset_n <= 1;
+
+          end  
           begin
             cfs_apb_sequence_simple seq_simple = cfs_apb_sequence_simple::type_id::create("seq_simple"); 
             void'(seq_simple.randomize() with {
@@ -50,6 +60,16 @@
           end
 
         join
+
+        begin
+          cfs_apb_sequence_random seq_random = cfs_apb_sequence_random::type_id::create("seq_random"); 
+          void'(seq_random.randomize() with {
+            num_items == 3;
+            });
+          // triger the body of the sequence and assign it to a sequencer
+          seq_random.start(env.apb_agent.sequencer);
+        end
+        #(100ns);
 
         `uvm_info("DEBUG", "this is the end of the test", UVM_LOW)
       

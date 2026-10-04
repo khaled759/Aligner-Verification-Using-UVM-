@@ -112,6 +112,19 @@
             end
         endtask
 
+        // wait task for reset to activate
+        virtual task wait_reset_start();
+            if(vif.preset_n) begin
+                @(negedge vif.preset_n);
+            end
+        endtask
+
+        virtual task wait_reset_end();
+            while (!vif.preset_n) begin
+                @(posedge vif.pclk);
+            end
+        endtask
+
     endclass
 
 `endif
